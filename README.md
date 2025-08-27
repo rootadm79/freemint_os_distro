@@ -59,3 +59,9 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
 - Use the included **online updater** to stay current.  
 - Additional software can be easily installed from **sparemint RPM repositories** using the included package tools.  
 - Contributions, feedback, and bug reports are welcome.
+
+## Screenshots from screenshots folder
+
+![IMG_4926](screenshots/IMG_4926.jpeg)
+![IMG_4927](screenshots/IMG_4927.jpeg)
+![IMG_4929](screenshots/IMG_4929.jpeg)
