@@ -34,7 +34,7 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
 - **Unix userland** with a wide set of utilities  
 - **XaAES** graphical environment with **TeraDesk** desktop  
 - **Web browsers:**  
-  - [Links](http://links.twibright.com/) (with modern SSL/TLS support)  
+  - [Links](http://links.twibright.com/) (with modern SSL/TLS support and GUI)  
   - [HighWire](http://highwire.atari-users.net/) (lightweight HTML browser)  
   - [NetSurf](https://www.netsurf-browser.org/) (modern CSS-capable browser)  
 - **Development tools:** Pure C, GCC, Python, GFA Basic, and more  
