@@ -6,7 +6,7 @@ This project provides a ready-to-use FreeMiNT OS image for Atari Falcon, TT and 
 It is designed to be easy to install, fully bootable and equipped with a modern Unix-like userland.
 
 ## Installation
-- The release contains an image for a **4 GB card** (compressed with ZIP to save space).  
+- The release contains an image for a **4 GB card**  
 - Write the raw image to your SD/CF card using `dd`, Balena Etcher or another imaging tool.  
 - For advanced users: the repository also includes TAR archives for drives **C:** and **E.:**  
   - These are intended for **manual installation** only.  
