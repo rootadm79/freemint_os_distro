@@ -32,7 +32,10 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
 - **Latest FreeMiNT kernel**  
 - **Unix userland** with a wide set of utilities  
 - **XaAES** graphical environment with **TeraDesk** desktop  
-- **Web browser:** Links (with modern SSL/TLS support)  
+- **Web browsers:**  
+  - [Links](http://links.twibright.com/) (with modern SSL/TLS support)  
+  - [HighWire](http://highwire.atari-users.net/) (lightweight HTML browser)  
+  - [NetSurf](https://www.netsurf-browser.org/) (modern CSS-capable browser)  
 - **Development tools:** Pure C, GCC, Python, GFA Basic, and more  
 - **New utilities:**  
   - `curl` (latest version)  
@@ -48,7 +51,7 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
 2. Write it to your card and insert it into your Atari.  
 3. Boot the machine from drive **C:**.  
 4. XaAES + TeraDesk will start automatically.  
-5. Explore the preinstalled tools (`mc`, `links`, etc.) or begin coding with the included compilers.
+5. Explore the preinstalled tools (`mc`, `links`, `highwire`, `netsurf`, etc.) or begin coding with the included compilers.
 
 ## Notes
 - This distribution is **actively maintained**.  
