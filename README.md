@@ -8,10 +8,11 @@ It is designed to be easy to install, fully bootable and equipped with a modern 
 ## Installation
 - The release contains an image for a **4 GB card** (compressed with ZIP to save space).  
 - Write the raw image to your SD/CF card using `dd`, Balena Etcher or another imaging tool.  
-- Repository also includes TAR archives for drives **C:** and **E:**:  
-  - **C:** must be bootable (FAT12/16)  
-  - **E:** must be `ext2`
-
+- For advanced users: the repository also includes TAR archives for drives **C:** and **E.:**  
+  - These are intended for **manual installation** only.  
+  - The user must prepare the partitions, format them (C: as FAT12/16, E: as ext2) and copy the files manually.  
+  - Recommended only for experienced users.
+    
 ## Hardware requirements
 - Works on base **Atari Falcon**, **DFB1x**, and **CT60/63 accelerators**.  
 - Minimum: **14 MB RAM** (TT-RAM expansion highly recommended).  
