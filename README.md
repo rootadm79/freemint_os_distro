@@ -14,7 +14,8 @@ It is designed to be easy to install, fully bootable, and equipped with a modern
 For advanced users, the repository also provides TAR archives of the **C:** and **E.:** partitions.  
 - Prepare the partitions manually:  
   - **C:** → FAT12/16 (bootable)  
-  - **E.:** → ext2  
+  - **D:** → is planed for your personal data. Stay untached when reinstaling or update OS  
+  - **E:** → ext2  
 - Copy the contents of the TAR archives into the corresponding partitions.  
 - ⚠️ Recommended only for experienced users.
 
