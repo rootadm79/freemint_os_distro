@@ -1,44 +1,57 @@
 # FreeMiNT OS Distro
-A complete bootable FreeMiNT distribution for 32-bit Atari machines.
+A complete bootable FreeMiNT distribution for 32-bit Atari computers.
 
 ## Overview
-This project provides a ready-to-use FreeMiNT OS image for Atari Falcon, TT and compatible accelerators.  
-It is designed to be easy to install, fully bootable and equipped with a modern Unix-like userland.
+This project delivers a ready-to-use FreeMiNT operating system image for the **Atari Falcon**, **TT**, and compatible accelerators.  
+It is designed to be easy to install, fully bootable, and equipped with a modern Unix-like userland.
 
 ## Installation
-- The release contains an image for a **4 GB card**  
-- Write the raw image to your SD/CF card using `dd`, Balena Etcher or another imaging tool.  
-- For advanced users: the repository also includes TAR archives for drives **C:** and **E.:**  
-  - These are intended for **manual installation** only.  
-  - The user must prepare the partitions, format them (C: as FAT12/16, E: as ext2) and copy the files manually.  
-  - Recommended only for experienced users.
-    
+- Download the bootable image from the **[Releases](../../releases)** section of this repository.  
+- The release includes a prebuilt image for a **4 GB card**.  
+- Write the raw image to your SD/CF card using `dd`, [Balena Etcher](https://etcher.balena.io), or any other imaging tool.  
+
+### Advanced installation (manual)
+For advanced users, the repository also provides TAR archives of the **C:** and **E.:** partitions.  
+- Prepare the partitions manually:  
+  - **C:** → FAT12/16 (bootable)  
+  - **E.:** → ext2  
+- Copy the contents of the TAR archives into the corresponding partitions.  
+- ⚠️ Recommended only for experienced users.
+
 ## Hardware requirements
-- Works on base **Atari Falcon**, **DFB1x**, and **CT60/63 accelerators**.  
-- Minimum: **14 MB RAM** (TT-RAM expansion highly recommended).  
-- Display: preconfigured for **Videl 800×606, 256 colors**.  
-  - If you experience problems, run **Videlity** and adjust settings for your monitor.  
-- Networking supported: **NetUSBee** and **PicoWiFi**.
+- Supported systems:  
+  - **Atari Falcon (stock)**  
+  - **DFB1x accelerators**  
+  - **CT60/CT63 accelerators**  
+- Minimum: **14 MB RAM** (TT-RAM expansion strongly recommended)  
+- Display: preconfigured for **Videl 800×606, 256 colors**  
+  - If you experience display issues, run **Videlity** and adjust the video settings for your monitor.  
+- Networking support: **NetUSBee** and **PicoWiFi**
 
 ## Included software
-- Up-to-date FreeMiNT **kernel**  
-- **Unix backend** with many utilities  
-- **XaAES** and **TeraDesk** desktop  
-- **Links** web browser with latest SSL/TLS support  
-- **Development tools**: Pure C, GCC, Python, GFA Basic and more  
-- **New utilities**:  
-  - `cURL` (latest version)  
+- **Latest FreeMiNT kernel**  
+- **Unix userland** with a wide set of utilities  
+- **XaAES** graphical environment with **TeraDesk** desktop  
+- **Web browser:** Links (with modern SSL/TLS support)  
+- **Development tools:** Pure C, GCC, Python, GFA Basic, and more  
+- **New utilities:**  
+  - `curl` (latest version)  
   - `wget`  
   - `Midnight Commander (mc)`  
-- **Online updater**
+- **Package management:**  
+  - Easy installation of **RPM packages** from **[sparemint](https://freemint.github.io/sparemint/sparemint/download.html)**  
+  - Included **GUI package manager** for convenient browsing and installation  
+- **Online updater** for keeping your system up to date
 
 ## Getting started
-1. Write the image to your card and insert into your Atari.  
-2. Boot the machine from drive **C:**.  
-3. Log in to the desktop (TeraDesk + XaAES).  
-4. Explore the preinstalled tools (`mc`, `links`, etc.) or start development with the included compilers.  
+1. Download the image from **[Releases](../../releases)**.  
+2. Write it to your card and insert it into your Atari.  
+3. Boot the machine from drive **C:**.  
+4. XaAES + TeraDesk will start automatically.  
+5. Explore the preinstalled tools (`mc`, `links`, etc.) or begin coding with the included compilers.
 
 ## Notes
-- This distro is actively maintained.  
-- For updates, use the included online updater.  
-- Contributions and bug reports are welcome.
+- This distribution is **actively maintained**.  
+- Use the included **online updater** to stay current.  
+- Additional software can be easily installed from **sparemint RPM repositories** using the included package tools.  
+- Contributions, feedback, and bug reports are welcome.
