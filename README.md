@@ -1,20 +1,43 @@
-# freemint_os_distro
-Freemint OS for 32bit Atari machines. Complete bootable distribution
+# FreeMiNT OS Distro
+A complete bootable FreeMiNT distribution for 32-bit Atari machines.
 
-In release is image for 4GB card. Copy raw image to card with dd or Balena Etcher or something other. For save space is image ziped.
+## Overview
+This project provides a ready-to-use FreeMiNT OS image for Atari Falcon, TT and compatible accelerators.  
+It is designed to be easy to install, fully bootable and equipped with a modern Unix-like userland.
 
-In repository are tar archive for drive C: and E:. C: must be bootable FAT12/16 end E: must be ext2.
+## Installation
+- The release contains an image for a **4 GB card** (compressed with ZIP to save space).  
+- Write the raw image to your SD/CF card using `dd`, Balena Etcher or another imaging tool.  
+- Repository also includes TAR archives for drives **C:** and **E:**:  
+  - **C:** must be bootable (FAT12/16)  
+  - **E:** must be `ext2`
 
-Distro is configured for use with videl and resolution 800x606 with 256 color on unchanged falcon. This have some requirement for your monitor. In case you have problem with display, run videlity configuration and setup parameters acceptable by your monitor.
+## Hardware requirements
+- Works on base **Atari Falcon**, **DFB1x**, and **CT60/63 accelerators**.  
+- Minimum: **14 MB RAM** (TT-RAM expansion highly recommended).  
+- Display: preconfigured for **Videl 800×606, 256 colors**.  
+  - If you experience problems, run **Videlity** and adjust settings for your monitor.  
+- Networking supported: **NetUSBee** and **PicoWiFi**.
 
-Working on base Falcon same as DFB1x and CT60/63 accelerator.
-Minimum is 14MB RAM, but TT RAM expansion are very recomended.
-Networking on netusbee and picowifi are supporeted.
+## Included software
+- Up-to-date FreeMiNT **kernel**  
+- **Unix backend** with many utilities  
+- **XaAES** and **TeraDesk** desktop  
+- **Links** web browser with latest SSL/TLS support  
+- **Development tools**: Pure C, GCC, Python, GFA Basic and more  
+- **New utilities**:  
+  - `cURL` (latest version)  
+  - `wget`  
+  - `Midnight Commander (mc)`  
+- **Online updater**
 
-Content:
-- up-to-date kernel
-- wide unix backend with many utilities
-- XaAES and Teradesk
-- Web browser links with newest SSL support
-- Pure C, GCC, Python, GFA Basic and more developing tools
-- Online updater
+## Getting started
+1. Write the image to your card and insert into your Atari.  
+2. Boot the machine from drive **C:**.  
+3. Log in to the desktop (TeraDesk + XaAES).  
+4. Explore the preinstalled tools (`mc`, `links`, etc.) or start development with the included compilers.  
+
+## Notes
+- This distro is actively maintained.  
+- For updates, use the included online updater.  
+- Contributions and bug reports are welcome.
