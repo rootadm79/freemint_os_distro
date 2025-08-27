@@ -39,9 +39,9 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
   - [NetSurf](https://www.netsurf-browser.org/) (modern CSS-capable browser)  
 - **Development tools:** Pure C, GCC, Python, GFA Basic, and more  
 - **New utilities:**  
-  - `curl` (latest version)  
-  - `wget`  
-  - `Midnight Commander (mc)`  
+  - `curl` (with modern SSL/TLS support)
+  - `wget` (with modern SSL/TLS support)
+  - `Midnight Commander (mc)`  (2025) 
 - **Package management:**  
   - Easy installation of **RPM packages** from **[sparemint](https://freemint.github.io/sparemint/sparemint/download.html)**  
   - Included **GUI package manager** for convenient browsing and installation  
