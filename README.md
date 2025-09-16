@@ -25,7 +25,7 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
   - **DFB1x accelerators**  
   - **CT60/CT63 accelerators**  
 - Minimum: **14 MB RAM** (TT-RAM expansion strongly recommended)  
-- Display: preconfigured for **Videl 800×606, 256 colors**  
+- Display: preconfigured for 640x480 16color, switch to 256color get Hires **Videl 800×606, 256 colors**  
   - If you experience display issues, run **Videlity** and adjust the video settings for your monitor.  
 - Networking support: **NetUSBee** and **PicoWiFi**
 
