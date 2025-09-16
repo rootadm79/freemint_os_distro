@@ -48,7 +48,7 @@ For advanced users, the repository also provides TAR archives of the **C:** and 
 - **Online updater** for keeping your system up to date
 
 ## Getting started
-1. Download the image from **[Releases](../../releases)**.  
+1. Download the image
 2. Write it to your card and insert it into your Atari.  
 3. Boot the machine from drive **C:**.  
 4. XaAES + TeraDesk will start automatically.  
