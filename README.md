@@ -6,7 +6,7 @@ This project delivers a ready-to-use FreeMiNT operating system image for the **A
 It is designed to be easy to install, fully bootable, and equipped with a modern Unix-like userland.
 
 ## Installation
-- Download the bootable image from the **[Releases](../../releases)** section of this repository.  
+- Download the bootable image from the **[Releases](https://ns2.mpsoftware.cz/filehosting/mint.img)** section of this repository.  
 - The release includes a prebuilt image for a **4 GB card**.  
 - Write the raw image to your SD/CF card using `dd`, [Balena Etcher](https://etcher.balena.io), or any other imaging tool.  
 
