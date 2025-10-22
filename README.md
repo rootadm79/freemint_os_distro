@@ -10,14 +10,7 @@ It is designed to be easy to install, fully bootable, and equipped with a modern
 - The release includes a prebuilt image for a **4 GB card**.  
 - Write the raw image to your SD/CF card using `dd`, [Balena Etcher](https://etcher.balena.io), or any other imaging tool.  
 
-### Advanced installation (manual)
-For advanced users, the repository also provides TAR archives of the **C:** and **E.:** partitions.  
-- Prepare the partitions manually:  
-  - **C:** → FAT12/16 (bootable)  
-  - **D:** → is planed for your personal data. Stay untached when reinstaling or update OS  
-  - **E:** → EXT2  
-- Copy the contents of the TAR archives into the corresponding partitions.  
-- ⚠️ Recommended only for experienced users.
+## Note: This distribution includes only the demo version of HDDRIVER. Without the full licensed version, HDDRIVER operates with significant limitations. To enable full functionality, replace HDDRIVER.SYS with your legal full version.
 
 ## Hardware requirements
 - Supported systems:  
