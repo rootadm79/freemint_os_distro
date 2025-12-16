@@ -1,4 +1,4 @@
-# FreeMiNT OS Distro
+# FreeMiNT OS Distro 25.2
 A complete bootable FreeMiNT distribution for 32-bit Atari computers.
 
 ## Overview
@@ -37,7 +37,7 @@ It is designed to be easy to install, fully bootable, and equipped with a modern
 - **Package management:**  
   - Easy installation of **RPM packages** from **[sparemint](https://freemint.github.io/sparemint/sparemint/download.html)**  
   - Included **GUI package manager** for convenient browsing and installation  
-- **Online updater** for keeping your system up to date
+
 
 ## Getting started
 1. Download the image
@@ -48,7 +48,7 @@ It is designed to be easy to install, fully bootable, and equipped with a modern
 
 ## Notes
 - This distribution is **actively maintained**.  
-- Use the included **online updater** to stay current.  
+- Release new version each 6 months   
 - Additional software can be easily installed from **sparemint RPM repositories** using the included package tools.  
 - Contributions, feedback, and bug reports are welcome.
 
