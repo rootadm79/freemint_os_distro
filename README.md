@@ -138,7 +138,7 @@ Modern alternative to uIPtools running directly under FreeMiNT.
 - Major stability improvements
 - Cleaner configuration
 - Better usability
-- Optimized forked kernel compiled in GCC 12.3.0 (original GCC 7.5.0)
+- Optimized forked kernel compiled with GCC 12.3.0 (original GCC 7.5.0)
 - Access to disk /dev/hda to IDE 0 device
 - SCSI writing stability
 - stool.tos remote access
