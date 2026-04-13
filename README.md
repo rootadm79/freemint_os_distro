@@ -1,4 +1,6 @@
-# FreeMiNT OS Distro 26.1
+# Create updated README.md with stool.tos section
+
+content = """# FreeMiNT OS Distro 26.1
 
 > 🚀 Ready-to-boot FreeMiNT distribution for Atari Falcon, TT and accelerator systems
 
@@ -9,9 +11,10 @@
 - 🧠 **Stable and refined** – major stability improvements in this release  
 - ⚡ **Ready in minutes** – just flash and boot  
 - 🖥️ **Modern Unix-like environment** on classic Atari hardware  
-- 🌐 **Working networking out of the box** (NetUSBee / PicoWiFi)  
+- 🌐 **Networking out of the box** (NetUSBee / PicoWiFi)  
 - 📦 **Package manager included** (RPM / sparemint)  
 - 🧰 **Development-ready** – GCC, Python, Pure C and more  
+- 🌍 **Web-based control & file access** via `stool.tos`  
 
 ---
 
@@ -21,9 +24,9 @@ FreeMiNT OS Distro is a complete, preconfigured operating system image designed 
 
 - **Atari Falcon (stock)**
 - **Atari TT**
-- Systems with **DFB1x** or **CT60/CT63 accelerators**
+- Systems with **DFB1x** or **CT60 / CT63 accelerators**
 
-It delivers a fully functional Unix-like system with GUI, networking, development tools, and modern utilities — all ready to use immediately after boot.
+It delivers a fully functional Unix-like system with GUI, networking, development tools, and modern utilities — ready to use immediately after boot.
 
 ---
 
@@ -40,7 +43,7 @@ It delivers a fully functional Unix-like system with GUI, networking, developmen
 3. Insert the card into your Atari  
 4. Boot from drive **C:**  
 
-✔ Done — system boots directly into GUI
+✔ System boots directly into GUI
 
 ---
 
@@ -50,7 +53,7 @@ This distribution includes a **demo version of HDDRIVER**, kindly provided by Uw
 
 ⚠️ The demo version has limitations.
 
-For full functionality, replace:
+To unlock full functionality, replace:
 HDDRIVER.SYS
 
 👉 Purchase full version:  
@@ -61,12 +64,12 @@ https://www.hddriver.net/
 ## ⚙️ Configuration
 
 Main configuration file:
-C:\MINT\1-19-cur\MINT.CNF
+C:\\MINT\\1-19-cur\\MINT.CNF
 
 ### 🖥️ Display
 
 - Default: **640×480 / 256 colors**
-- Videlity included, but disabled by default
+- Videlity is included, but disabled by default
 
 ---
 
@@ -111,6 +114,17 @@ Selectable in mint.cnf:
 - curl
 - wget
 - Midnight Commander (mc)
+
+---
+
+### 🌐 Remote access (stool.tos)
+
+- stool.tos – lightweight web server running on Atari  
+- File management from PC via browser  
+- Basic remote control of the system  
+- Works over NetUSBee / PicoWiFi  
+
+Modern alternative to uIPtools running directly under FreeMiNT.
 
 ---
 
@@ -166,3 +180,10 @@ After boot:
 ## 📄 License
 
 See individual components for licensing.
+"""
+
+file_path = "/mnt/data/README.md"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(content)
+
+file_path
