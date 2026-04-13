@@ -31,7 +31,7 @@ It delivers a fully functional Unix-like system with GUI, networking, developmen
 ## 💾 Installation
 
 1. Download the image:  
-   https://ns.mpsoftware.cz/filehosting/card.img  
+   https://ns.mpsoftware.cz/filehosting/download.php  
 
 2. Write it to SD / CF card:
    ```sh
