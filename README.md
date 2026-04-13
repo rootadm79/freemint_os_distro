@@ -138,9 +138,13 @@ Modern alternative to uIPtools running directly under FreeMiNT.
 - Major stability improvements
 - Cleaner configuration
 - Better usability
-- Experimental forked kernel compiled in GCC 12.3.0 (original GCC 7.5.0)
-- raw access to disk /dev/hda to IDE 0 device
-- scsi writing stability
+- Optimized forked kernel compiled in GCC 12.3.0 (original GCC 7.5.0)
+- Access to disk /dev/hda to IDE 0 device
+- SCSI writing stability
+- stool.tos remote access
+- Separation tos things to BGM partition and unix userland to ext2
+- When migrating unix userland to another partition, only mint.cnf changing is necessary
+- Easy change for using Radeon GPU on CTPCI (in /auto enable fvdi.prg)
 
 ---
 
@@ -158,7 +162,6 @@ After boot:
 
 - Actively maintained
 - New release every ~6 months
-- Easily extendable via RPM
 
 ---
 
