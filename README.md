@@ -61,7 +61,7 @@ https://www.hddriver.net/
 ## ⚙️ Configuration
 
 Main configuration file:
-C:\MINT\MINT.CNF
+C:\MINT\1-19-cur\MINT.CNF
 
 ### 🖥️ Display
 
