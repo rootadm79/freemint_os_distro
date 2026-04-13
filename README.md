@@ -1,8 +1,4 @@
-# Create updated README.md with stool.tos section
-
-content = """# FreeMiNT OS Distro 26.1
-
-> 🚀 Ready-to-boot FreeMiNT distribution for Atari Falcon, TT and accelerator systems
+🚀 Ready-to-boot FreeMiNT distribution for Atari Falcon, TT and accelerator systems
 
 ---
 
@@ -177,13 +173,12 @@ After boot:
 
 ---
 
+## 👤 Author
+
+Created and maintained by **Michal Pavlis**, with support from the Czech Atari community.
+
+---
+
 ## 📄 License
 
 See individual components for licensing.
-"""
-
-file_path = "/mnt/data/README.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(content)
-
-file_path
