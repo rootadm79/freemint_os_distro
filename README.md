@@ -1,59 +1,168 @@
-# FreeMiNT OS Distro 25.2
-A complete bootable FreeMiNT distribution for 32-bit Atari computers.
+# FreeMiNT OS Distro 26.1
 
-## Overview
-This project delivers a ready-to-use FreeMiNT operating system image for the **Atari Falcon**, **TT**, and compatible accelerators.  
-It is designed to be easy to install, fully bootable, and equipped with a modern Unix-like userland.
+> 🚀 Ready-to-boot FreeMiNT distribution for Atari Falcon, TT and accelerator systems
 
-## Installation
-- Download the bootable image from here - [image](https://ns.mpsoftware.cz/filehosting/card.img)
-- The release includes a prebuilt image for a **4 GB card**.  
-- Write the raw image to your SD/CF card using `dd`, [Balena Etcher](https://etcher.balena.io), or any other imaging tool.  
+---
 
-## Note: This distribution includes only the demo version of HDDRIVER. Without the full licensed version, HDDRIVER operates with significant limitations. To enable full functionality, replace HDDRIVER.SYS with your legal full version.
+## ✨ Highlights
 
-## Hardware requirements
-- Supported systems:  
-  - **Atari Falcon (stock)**  
-  - **DFB1x accelerators**  
-  - **CT60/CT63 accelerators**  
-- Minimum: **14 MB RAM** (TT-RAM expansion strongly recommended)  
-- Display: preconfigured for 640x480 256color. For higher resolution uncomment videltity in mint.cfg
-- Networking support: **NetUSBee** and **PicoWiFi**
+- 🧠 **Stable and refined** – major stability improvements in this release  
+- ⚡ **Ready in minutes** – just flash and boot  
+- 🖥️ **Modern Unix-like environment** on classic Atari hardware  
+- 🌐 **Working networking out of the box** (NetUSBee / PicoWiFi)  
+- 📦 **Package manager included** (RPM / sparemint)  
+- 🧰 **Development-ready** – GCC, Python, Pure C and more  
 
-## Included software
-- **Latest FreeMiNT kernel**  
-- **Unix userland** with a wide set of utilities  
-- **XaAES** graphical environment with **TeraDesk** desktop  
-- **Web browsers:**  
-  - [Links](http://links.twibright.com/) (with modern SSL/TLS support and GUI)  
-  - [HighWire](http://highwire.atari-users.net/) (lightweight HTML browser)  
-  - [NetSurf](https://www.netsurf-browser.org/) (modern CSS-capable browser)  
-- **Development tools:** Pure C, GCC, Python, GFA Basic, and more  
-- **New utilities:**  
-  - `curl` (with modern SSL/TLS support)
-  - `wget` (with modern SSL/TLS support)
-  - `Midnight Commander (mc)`  (2025) 
-- **Package management:**  
-  - Easy installation of **RPM packages** from **[sparemint](https://freemint.github.io/sparemint/sparemint/download.html)**  
-  - Included **GUI package manager** for convenient browsing and installation  
+---
 
+## 🧾 Overview
 
-## Getting started
-1. Download the image
-2. Write it to your card and insert it into your Atari.  
-3. Boot the machine from drive **C:**.  
-4. XaAES + TeraDesk will start automatically.  
-5. Explore the preinstalled tools (`mc`, `links`, `highwire`, `netsurf`, etc.) or begin coding with the included compilers.
+FreeMiNT OS Distro is a complete, preconfigured operating system image designed for:
 
-## Notes
-- This distribution is **actively maintained**.  
-- Release new version each 6 months   
-- Additional software can be easily installed from **sparemint RPM repositories** using the included package tools.  
-- Contributions, feedback, and bug reports are welcome.
+- **Atari Falcon (stock)**
+- **Atari TT**
+- Systems with **DFB1x** or **CT60/CT63 accelerators**
 
-## Screenshots 
+It delivers a fully functional Unix-like system with GUI, networking, development tools, and modern utilities — all ready to use immediately after boot.
 
-![IMG_4926](screenshots/IMG_4926.jpeg)
-![IMG_4927](screenshots/IMG_4927.jpeg)
-![IMG_4929](screenshots/IMG_4929.jpeg)
+---
+
+## 💾 Installation
+
+1. Download the image:  
+   https://ns.mpsoftware.cz/filehosting/card.img  
+
+2. Write it to SD / CF card:
+   ```sh
+   dd if=card.img of=/dev/sdX bs=1M status=progress
+   ```
+
+3. Insert the card into your Atari  
+4. Boot from drive **C:**  
+
+✔ Done — system boots directly into GUI
+
+---
+
+## 🧠 HDDRIVER
+
+This distribution includes a **demo version of HDDRIVER**, kindly provided by Uwe Seimet.
+
+⚠️ The demo version has limitations.
+
+For full functionality, replace:
+HDDRIVER.SYS
+
+👉 Purchase full version:  
+https://www.hddriver.net/
+
+---
+
+## ⚙️ Configuration
+
+Main configuration file:
+C:\MINT\MINT.CNF
+
+### 🖥️ Display
+
+- Default: **640×480 / 256 colors**
+- Videlity included, but disabled by default
+
+---
+
+### 🌐 Networking
+
+Selectable in mint.cnf:
+
+- NetUSBee
+- PicoWiFi
+
+---
+
+## 📦 Included software
+
+### 🧩 Core system
+
+- Latest FreeMiNT kernel
+- XaAES graphical environment
+- TeraDesk desktop
+
+---
+
+### 🌍 Web browsers
+
+- Links
+- HighWire
+- NetSurf
+
+---
+
+### 🧰 Development tools
+
+- GCC
+- Pure C
+- Python
+- GFA Basic
+
+---
+
+### 🔧 Utilities
+
+- curl
+- wget
+- Midnight Commander (mc)
+
+---
+
+### 📦 Package management
+
+- RPM packages via sparemint
+- GUI package manager included
+
+---
+
+## 🆕 What’s new in 26.1
+
+- Major stability improvements
+- Cleaner configuration
+- Better usability
+
+---
+
+## 🚀 Getting started
+
+After boot:
+
+- GUI starts automatically
+- Use terminal or mc
+- Try: links, netsurf
+
+---
+
+## 📌 Notes
+
+- Actively maintained
+- New release every ~6 months
+- Easily extendable via RPM
+
+---
+
+## 📸 Screenshots
+
+![Screenshot 1](screenshots/IMG_4926.jpeg)  
+![Screenshot 2](screenshots/IMG_4927.jpeg)  
+![Screenshot 3](screenshots/IMG_4929.jpeg)
+
+---
+
+## ❤️ Acknowledgements
+
+- FreeMiNT community  
+- sparemint project  
+- Uwe Seimet  
+
+---
+
+## 📄 License
+
+See individual components for licensing.
