@@ -142,9 +142,9 @@ Modern alternative to uIPtools running directly under FreeMiNT.
 - Access to disk /dev/hda to IDE 0 device
 - SCSI writing stability
 - stool.tos remote access
-- Separation tos things to BGM partition and unix userland to ext2
+- Separation TOS/GEM things to BGM partition and unix userland to ext2
 - When migrating unix userland to another partition, only mint.cnf changing is necessary
-- Easy change for using Radeon GPU on CTPCI (in /auto enable fvdi.prg)
+- Easy to change for using Radeon GPU on CTPCI (in /auto enable fvdi.prg)
 
 ---
 
