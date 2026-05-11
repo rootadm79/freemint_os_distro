@@ -23,6 +23,7 @@ FreeMiNT OS Distro is a complete, preconfigured operating system image designed 
 - **Atari Falcon (stock)**
 - **Atari TT (experimental)** 
 - Systems with **DFB1x** or **CT60 / CT63 accelerators**
+- FPU is necessary or some part must be dissabled
 
 It delivers a fully functional Unix-like system with GUI, networking, development tools, and modern utilities — ready to use immediately after boot.
 
