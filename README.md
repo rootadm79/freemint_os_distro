@@ -119,7 +119,7 @@ Videlity is included but disabled by default.
 
 For Radeon CTPCI setups:
 
-- enable `fvdi.prg` in `/auto`
+- disable `nvdi.prg` in `/auto`
 
 ---
 
