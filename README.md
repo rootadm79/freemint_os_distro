@@ -217,8 +217,8 @@ After boot:
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/desktop262.png" width="32%">
-  <img src="screenshots/mc262.png" width="32%">
+  <img src="screenshots/screenshot4.png" width="32%">
+  <img src="screenshots/screenshot5.png" width="32%">
   <img src="screenshots/mc262b.png" width="32%">
 </p>
 
