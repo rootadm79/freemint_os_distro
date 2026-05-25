@@ -24,7 +24,7 @@ FreeMiNT OS Distro is a complete preconfigured operating system image designed f
 - Atari TT (experimental)
 - Atari Falcon with DFB1x accelerators
 - Atari Falcon with CT60 / CT63
-- Aranym (tested)
+- Aranym (working well)
 - Hatari (experimental)
 
 The distribution provides a practical Unix workstation experience on Atari systems, including GUI, networking, development tools, package management and modern utilities — ready immediately after boot.
