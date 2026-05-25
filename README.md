@@ -1,4 +1,4 @@
-# FreeMiNT OS Distro 26.1
+# FreeMiNT OS Distro 26.2
 
 > 🚀 Ready-to-boot FreeMiNT distribution for Atari Falcon, TT and accelerator systems
 
@@ -6,41 +6,63 @@
 
 ## ✨ Highlights
 
-- 🧠 **Stable and refined** – major stability improvements in this release  
-- ⚡ **Ready in minutes** – just flash and boot  
-- 🖥️ **Modern Unix-like environment** on classic Atari hardware  
-- 🌐 **Networking out of the box** (NetUSBee / PicoWiFi)  
-- 📦 **Package manager included** (RPM / sparemint)  
-- 🧰 **Development-ready** – GCC, Python, Pure C and more  
-- 🌍 **Web-based control & file access** via `stool.tos`  
+- 🧠 Stable and refined FreeMiNT environment
+- ⚡ Ready in minutes – just flash and boot
+- 🖥️ Modern multitasking Unix-like environment on classic Atari hardware
+- 🌐 Networking out of the box (PicoWiFi enabled by default)
+- 📦 RPM / SpareMiNT package management included
+- 🧰 Development-ready system with GCC, Python and classic Atari tools
+- 🔧 Optimized FreeMiNT kernel compiled with GCC 15.2
+- 🌍 Web-based remote access via `stool.tos`
 
 ---
 
 ## 🧾 Overview
 
-FreeMiNT OS Distro is a complete, preconfigured operating system image designed for:
+FreeMiNT OS Distro is a complete preconfigured operating system image designed for:
 
-- **Atari Falcon (stock)**
-- **Atari TT (experimental)** 
-- Systems with **DFB1x** or **CT60 / CT63 accelerators**
-- FPU is required or some components must be disabled
+- Atari Falcon (stock)
+- Atari TT (experimental)
+- Atari Falcon with DFB1x accelerators
+- Atari Falcon with CT60 / CT63
 
-It delivers a fully functional Unix-like system with GUI, networking, development tools, and modern utilities — ready to use immediately after boot.
+The distribution provides a practical Unix workstation experience on Atari systems, including GUI, networking, development tools, package management and modern utilities — ready immediately after boot.
+
+---
+
+## 🧮 Recommended hardware
+
+Minimum:
+
+- 68030 + FPU
+- 14 MB RAM
+
+Recommended:
+
+- 68060 accelerator
+- TT-RAM expansion
+- Ethernet adapter (PicoWiFi or NetUSBee)
+
+Systems without FPU support may require disabling selected components.
 
 ---
 
 ## 💾 Installation
 
-1. Download the image:  
-   https://ns.mpsoftware.cz/filehosting/download.php  
+1. Download the image:
 
-2. Write it to SD / CF card:
-   ```sh
-   dd if=card.img of=/dev/sdX bs=1M status=progress
-   ```
+https://ns.mpsoftware.cz/filehosting/download.php
 
-3. Insert the card into your Atari  
-4. Boot from drive **C:**  
+2. Write image to SD / CF card:
+
+```sh
+dd if=card.img of=/dev/sdX bs=1M status=progress conv=fsync
+```
+
+⚠️ Be careful to select the correct target device.
+
+3. Insert the card into your Atari
+4. Boot from drive `C:`
 
 ✔ System boots directly into GUI
 
@@ -48,36 +70,66 @@ It delivers a fully functional Unix-like system with GUI, networking, developmen
 
 ## 🧠 HDDRIVER
 
-This distribution includes a **demo version of HDDRIVER**, kindly provided by Uwe Seimet.
+This distribution includes a demo version of HDDRIVER, kindly provided by Uwe Seimet.
 
 ⚠️ The demo version has limitations.
 
 To unlock full functionality, replace:
-HDDRIVER.SYS
 
-👉 Purchase full version:  
+```txt
+HDDRIVER.SYS
+```
+
+👉 Full version:
+
 https://www.hddriver.net/
+
+---
+
+## 🗂️ Hybrid TOS / Unix layout
+
+- TOS/GEM environment stored on FAT partition
+- Unix userland stored on ext2 partition
+- Easy migration of Unix environment between disks
+- Only `mint.cnf` adjustment required after migration
+
+This separation improves maintainability and simplifies future upgrades.
 
 ---
 
 ## ⚙️ Configuration
 
 Main configuration file:
+
+```txt
 C:\MINT\1-19-cur\MINT.CNF
+```
+
+---
 
 ### 🖥️ Display
 
-- Default: **640×480 / 256 colors**
-- Videlity is included, but disabled by default
+Default display mode:
+
+- 640×480
+- 256 colors
+
+Videlity is included but disabled by default.
+
+For Radeon CTPCI setups:
+
+- enable `fvdi.prg` in `/auto`
 
 ---
 
 ### 🌐 Networking
 
-Selectable in mint.cnf:
+Supported networking devices:
 
+- PicoWiFi (default)
 - NetUSBee
-- PicoWiFi
+
+PicoWiFi is enabled by default in 26.2.
 
 ---
 
@@ -101,9 +153,9 @@ Selectable in mint.cnf:
 
 ### 🧰 Development tools
 
-- GCC
+- GCC 15.2
+- Python 3.11
 - Pure C
-- Python
 - GFA Basic
 
 ---
@@ -116,12 +168,12 @@ Selectable in mint.cnf:
 
 ---
 
-### 🌐 Remote access (stool.tos)
+### 🌐 Remote access (`stool.tos`)
 
-- stool.tos – lightweight web server running on Atari  
-- File management from PC via browser  
-- Basic remote control of the system  
-- Works over NetUSBee / PicoWiFi  
+- Lightweight web server running directly on Atari
+- File management from PC browser
+- Basic remote system control
+- Works via PicoWiFi or NetUSBee
 
 Modern alternative to uIPtools running directly under FreeMiNT.
 
@@ -129,23 +181,23 @@ Modern alternative to uIPtools running directly under FreeMiNT.
 
 ### 📦 Package management
 
-- RPM packages via sparemint
+- RPM package support via SpareMiNT
 - GUI package manager included
 
 ---
 
-## 🆕 What’s new in 26.1
+## 🆕 What’s new in 26.2
 
-- Major stability improvements
-- Cleaner configuration
-- Better usability
-- Optimized forked kernel compiled with GCC 12.3.0
-- Access to disk /dev/hda to IDE 0 device
-- SCSI writing stability
-- stool.tos remote access
-- Separation TOS/GEM things to BGM partition and unix userland to ext2
-- When migrating unix userland to another partition, only mint.cnf changing is necessary
-- Easy to change for using Radeon GPU on CTPCI (in /auto enable fvdi.prg)
+- Improved overall system stability
+- PicoWiFi enabled by default
+- Fixed networking performance problems
+- New optimized Unix userland
+- GCC upgraded to 15.2
+- Python upgraded to 3.11
+- Improved SCSI write stability
+- Proper IDE access via `/dev/hda`
+- Cleaner configuration and easier maintenance
+- Further optimized FreeMiNT kernel build
 
 ---
 
@@ -154,40 +206,48 @@ Modern alternative to uIPtools running directly under FreeMiNT.
 After boot:
 
 - GUI starts automatically
-- Use terminal or mc
-- Try: links, netsurf
+- Open terminal or Midnight Commander
+- Try:
+  - `links`
+  - `netsurf`
+  - `mc`
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/desktop262.png" width="32%">
+  <img src="screenshots/mc262.png" width="32%">
+  <img src="screenshots/mc262b.png" width="32%">
+</p>
 
 ---
 
 ## 📌 Notes
 
 - Actively maintained
-- New release every ~6 months
-
----
-
-## 📸 Screenshots
-
-![Screenshot 1](screenshots/IMG_4926.jpeg)  
-![Screenshot 2](screenshots/IMG_4927.jpeg)  
-![Screenshot 3](screenshots/IMG_4929.jpeg)
+- New release approximately every 6 months
+- Optimized for real Atari hardware
+- Designed for practical daily usability
 
 ---
 
 ## ❤️ Acknowledgements
 
-- FreeMiNT community  
-- sparemint project  
-- Uwe Seimet  
+- FreeMiNT community
+- SpareMiNT project
+- Uwe Seimet
+- Czech Atari community
 
 ---
 
 ## 👤 Author
 
-Created and maintained by **Michal Pavlis**, with support from the Czech Atari community.
+Created and maintained by **Michal Pavlis**
 
 ---
 
 ## 📄 License
 
-See individual components for licensing.
+See individual components for their respective licenses.
