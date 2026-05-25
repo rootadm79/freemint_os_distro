@@ -219,7 +219,7 @@ After boot:
 <p align="center">
   <img src="screenshots/screenshot4.png" width="32%">
   <img src="screenshots/screenshot5.png" width="32%">
-  <img src="screenshots/mc262b.png" width="32%">
+
 </p>
 
 ---
