@@ -73,7 +73,7 @@ dd if=card.img of=/dev/sdX bs=1M status=progress conv=fsync
 
 This distribution includes a demo version of HDDRIVER, kindly provided by Uwe Seimet.
 
-⚠️ The demo version has limitations.
+⚠️ The demo version has limitations and system is very slow.
 
 To unlock full functionality, replace:
 
