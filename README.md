@@ -12,7 +12,6 @@
 - 🌐 Networking out of the box (PicoWiFi enabled by default)
 - 📦 RPM / SpareMiNT package management included
 - 🧰 Development-ready system with GCC, Python and classic Atari tools
-- 🔧 Optimized FreeMiNT kernel compiled with GCC 15.2
 - 🌍 Web-based remote access via `stool.tos`
 
 ---
